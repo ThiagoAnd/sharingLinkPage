@@ -37,15 +37,45 @@ function compartilharWhats(){
   
    }
    
-
+  function scrollToTheTop() {
+      $('html, body').animate({
+          scrollTop: 0
+      }, 400);
+  }
 
 </script>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 
 <style>
     .center{
     width:400px;
     margin:auto;
     }   
+	
+	
+	#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
     
 </style>
 </head>
@@ -73,8 +103,9 @@ function compartilharWhats(){
 <br>Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Lectus arcu bibendum at varius vel pharetra vel. Viverra mauris in aliquam sem fringilla ut. Risus feugiat in ante metus dictum at tempor. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Elementum eu facilisis sed odio morbi quis commodo odio. Auctor elit sed vulputate mi. Nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus. Ut lectus arcu bibendum at. Nunc mi ipsum faucibus vitae aliquet. Nisi scelerisque eu ultrices vitae auctor eu augue. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a. Id cursus metus aliquam eleifend mi. Vitae congue mauris rhoncus aenean vel elit. Aliquet eget sit amet tellus cras adipiscing.
 
 
-</div>
 
+</div>
+<button onclick="scrollToTheTop()" id="myBtn" title="Go to top">Top</button>
 
 
 </body>
